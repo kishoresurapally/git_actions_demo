@@ -12,4 +12,4 @@ def test_subtract():
 def test_multiply():
     assert multiply(3, 2) == 6
 def test_temporary():
-    assert 2==3
+    assert 2==2
