@@ -39,5 +39,6 @@ jobs:
         with :
           image: kishoresurapally/firstrepo
           registry: docker.io
+          run: docker build -t your-image-name . echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u kishoresurapally --@Kishore777-stdin docker push docker push kishoresurapally/firstrepo:tagname
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD}}
