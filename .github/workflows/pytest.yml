@@ -35,7 +35,7 @@ jobs:
           python -m pytest
   
       - name : Push docker image
-        uses: mr-smithers-excellent/docker-build-push@v4
+        uses: rossmaclean/docker-build-push-action@v0.0.23
         with :
           image: kishoresurapally/firstrepo
           registry: docker.io
